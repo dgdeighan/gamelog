@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>GameLog</title>
+    <link rel='stylesheet' href='styles.css'>
+    <script src='main.js' defer></script>
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+
+  <body>
+
+    <div class='about'>
+
+      <div class='about-content'>
+        <h1>ABOUT</h1>
+        <p>
+          This is a simple web-based list app that used to track:
+          <ul>
+            <li>Games that you own but haven't played yet - your <strong>backlog</strong>.</li>
+            <li>Games that you don't own but want to get - your <strong>wishlist</strong>.</li>
+          </ul>
+        </p>
+        <p>
+          Click on <strong>"Backlog"</strong> or <strong>"Wishlist"</strong> to swap between both lists.
+        </p>
+        <p>
+          To add a game to either list, enter the details of the game into
+          the fields, then click <strong>"Add Game"</strong>. A game will only be added if there
+          is a name present in the field.
+        </p>
+        <p>
+          To remove a game from either list, click the entry's <strong>"Delete"</strong> button
+          in the list.
+        </p>
+        <p>
+          To save your data, click <strong>"Save Data"</strong>.
+        </p>
+        <p>
+          To clear your lists completely, click <strong>"Clear Data"</strong>.
+        </p>
+        <p>
+          To close out of this window, click anywhere.
+        </p>
+      </div>
+
+    </div>
+
+    <div class='content'>
+
+      <div class='heading'>
+        <h1>GameLog: Game Backlog and Wishlist Tracker</h1>
+        <button class='abt-btn'>About</button>
+      </div>
+
+      <div class='list'>
+
+        <div class='sidebar'>
+          <button class='backlog-btn'>Backlog</button>
+          <button class='wishlist-btn'>Wishlist</button>
+
+          <div class='ui'>
+            <label for='name'>Name: </label>
+            <input type='text' name='name' id='name'>
+
+            <label for='genre'>Genre: </label>
+            <input type='text' name='genre' id='genre'
+
+            <label for='platform'>Platform: </label>
+            <input type='text' name='platform' id='platform'>
+
+            <label for='dev'>Developer: </label>
+            <input type='text' name='dev' id='dev'>
+
+            <label for='pub'>Publisher: </label>
+            <input type='text' name='pub' id='pub'>
+          </div>
+          <br>
+          <button class='add-btn'>Add Game</button>
+          <br>
+          <br>
+          <button class='save-btn'>Save Data</button>
+          <button class='clear-btn'>Clear Data</button>
+          <br>
+          <br>
+          <footer>Made by David Deighan with JavaScript and Vue. (c) 2022</footer>
+        </div>
+
+        <div class='list-area'>
+
+          <list-item :datas='backlog' v-if="backRender"></list-item>
+          <list-item :datas='wishlist' v-if="wishRender"></list-item>
+
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+body{
+  margin: 0;
+  font-family: consolas;
+}
+
+footer{
+  opacity: 50%;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/*  About section   */
+.about{
+  visibility: hidden;
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+.about-content{
+  color: white;
+  background-color: rgba(30,30,40,1);
+  width: 47%;
+  border: 5px solid rgba(255,255,255,1);
+  border-radius: 20px;
+  padding: 20px 40px;
+  font-size: 1.3em;
+  font-family: sans-serif;
+}
+
+li{
+  margin: 5px 0 5px 0;
+}
+
+/*  Content/List App  */
+
+h2{
+  margin: 0;
+}
+
+.content{
+  padding: 15px 0 0 35px;
+}
+
+.heading{
+  width: 80%;
+  border-bottom: 5px solid rgba(130,200,130,1);
+  padding-bottom: 10px;
+  margin-left: 20px;
+}
+
+.list{
+  width: 80%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 20px;
+}
+
+.sidebar{
+  height: 460px;
+}
+
+.sidebar, .list-area{
+  border: 5px solid rgba(130,200,130,1);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+
+.ui{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.list-item{
+  border: 3px dashed rgba(130,200,130,1);
+  padding: 20px;
+}
+
+/*    BUTTON CSS    */
+
+button{
+  border: 3px solid rgba(160,160,160,1);
+  border-radius: 15px;
+  padding: 8px 8px 8px 8px;
+  font-weight: bold;
+  background-color: rgba(255,255,255,1);
+}
+
+.backlog-btn, .wishlist-btn{
+  border: 3px solid rgba(160,160,160,1);
+  border-radius: 15px;
+  padding: 8px 8px 8px 8px;
+  font-size: 1.4em;
+  font-weight: bold;
+  background-color: rgba(255,255,255,1);
+  color: black;
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+input{
+  margin: 5px 0 5px 0;
+}
+
+button:hover{
+  border: 3px solid rgba(100,100,100,1);
+  background-color: rgba(200,200,200,1);
+}
+
+button:active{
+  border: 3px solid rgba(60,60,60,1);
+  background-color: rgba(150,150,150,1);
+}
+
+/*    Table CSS   */
+
+table{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+td{
+  border: 3px solid rgba(0,0,0,0.3);
+  box-sizing: border-box;
+  padding: 8px;
+  font-size: 1.1em;
+}
+td:nth-child(odd){
+  font-weight: bold;
+}
