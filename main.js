@@ -13,10 +13,6 @@
   Made with: HTML, CSS, JavaScript, VueJS (CDN)
 */
 
-/*
-  NEEDS FINAL TESTING
-*/
-
 // about screen
 const about = document.querySelector('.about');
 const aboutBtn = document.querySelector('.abt-btn');
