@@ -1,7 +1,7 @@
 /*
   Name: GameLog
   Author: David Deighan
-  Publish date: TBD
+  Publish date: 01/23/2022
   Description: A simple application designed to keep track of two things:
       video games that you own, but haven't played yet (backlog), and
       video games that you want to get at some point (wishlist). It also
